@@ -1,13 +1,24 @@
-img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-
 .img-position {
   position: relative;
   text-align: center;
   color: white;
+}
+
+.img-bg {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  /* position: relative; */
+}
+
+.img-position::before {
+  content: '';
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.563);
 }
 
 .img-caption {
